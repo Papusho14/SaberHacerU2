@@ -1,6 +1,7 @@
 import mysql.connector
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+import yaml
 import datetime
 import pandas as pd
 
@@ -45,6 +46,21 @@ def indent_xml(filename):
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(pretty_xml_string)
 
+#Aqui Diego tiene que agregar el codigo de su parte
+
+# Función para generar un archivo YAML de todos los usuarios
+def create_yaml():
+    conn = connect_to_db()
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM teachers")
+    users = cursor.fetchall()
+    conn.close()
+
+    with open("users.yaml", "w", encoding='utf-8') as yaml_file:
+        yaml.dump(users, yaml_file, allow_unicode=True)
+
+    print("Archivo YAML creado: teachers.yaml")
+
 # Menú de opciones
 def main_menu():
     while True:
@@ -54,7 +70,10 @@ def main_menu():
         print("3. Actualizar usuario")
         print("4. Eliminar usuario")
         print("5. Generar archivo XML")
-        print("6. Salir")
+        print("6. Generar archivo YAML")
+        print("7. Generar archivo JSON")
+        print("8. Generar archivos XML, JSON y YAML")
+        print("9. Salir")
 
         choice = input("Ingrese el número de la opción: ")
 
@@ -68,7 +87,8 @@ def main_menu():
             delete_user()
         elif choice == '5':
             create_xml()
-        elif choice == '6':
+        #Aqui Diego tiene que agregar su codigo
+        elif choice == '9':
             print("Saliendo del programa.")
             break
         else:
