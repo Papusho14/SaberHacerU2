@@ -1,6 +1,7 @@
 import mysql.connector
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+import json
 import yaml
 import datetime
 import pandas as pd
@@ -47,6 +48,18 @@ def indent_xml(filename):
         file.write(pretty_xml_string)
 
 #Aqui Diego tiene que agregar el codigo de su parte
+# Función para generar un archivo JSON de todos los usuarios
+def create_json():
+    conn = connect_to_db()
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM teachers")
+    users = cursor.fetchall()
+    conn.close()
+
+    with open("users.json", "w", encoding='utf-8') as json_file:
+        json.dump(users, json_file, ensure_ascii=False, indent=4)
+
+    print("Archivo JSON creado: users.json")
 
 # Función para generar un archivo YAML de todos los usuarios
 def create_yaml():
