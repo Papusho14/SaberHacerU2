@@ -1,8 +1,8 @@
 import mysql.connector
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
 import json
 import yaml
+from xml.dom import minidom
 import datetime
 import pandas as pd
 
@@ -24,7 +24,7 @@ def create_xml():
     conn.close()
 
     root = ET.Element("users")
-
+    
     for user in users:
         user_elem = ET.SubElement(root, "user")
         for key, value in user.items():
@@ -47,7 +47,6 @@ def indent_xml(filename):
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(pretty_xml_string)
 
-#Aqui Diego tiene que agregar el codigo de su parte
 # Función para generar un archivo JSON de todos los usuarios
 def create_json():
     conn = connect_to_db()
@@ -72,7 +71,7 @@ def create_yaml():
     with open("users.yaml", "w", encoding='utf-8') as yaml_file:
         yaml.dump(users, yaml_file, allow_unicode=True)
 
-    print("Archivo YAML creado: teachers.yaml")
+    print("Archivo YAML creado: users.yaml")
 
 # Menú de opciones
 def main_menu():
@@ -83,8 +82,8 @@ def main_menu():
         print("3. Actualizar usuario")
         print("4. Eliminar usuario")
         print("5. Generar archivo XML")
-        print("6. Generar archivo YAML")
-        print("7. Generar archivo JSON")
+        print("6. Generar archivo JSON")
+        print("7. Generar archivo YAML")
         print("8. Generar archivos XML, JSON y YAML")
         print("9. Salir")
 
@@ -100,7 +99,14 @@ def main_menu():
             delete_user()
         elif choice == '5':
             create_xml()
-        #Aqui Diego tiene que agregar su codigo
+        elif choice == '6':
+            create_json()
+        elif choice == '7':
+            create_yaml()
+        elif choice == '8':
+            create_xml()
+            create_json()
+            create_yaml()
         elif choice == '9':
             print("Saliendo del programa.")
             break
