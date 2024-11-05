@@ -101,18 +101,18 @@ def main_menu():
         elif choice == '5':
             create_xml()
         #Aqui Diego tiene que agregar su codigo
-       elif choice == '6':
+        elif choice == '6':
             create_json()
-       elif choice == '7':
+        elif choice == '7':
             create_yaml()
-       elif choice == '8':
+        elif choice == '8':
             create_xml()
             create_json()
             create_yaml()
-       elif choice == '9':
+        elif choice == '9':
             print("Saliendo del programa.")
             break
-       else:
+        else:
             print("Opción no válida. Por favor, intente de nuevo.")
 
 # Funciones de agregar, ver, actualizar y eliminar usuario (mismas que antes)
