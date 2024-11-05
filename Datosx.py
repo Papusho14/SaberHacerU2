@@ -101,6 +101,14 @@ def main_menu():
         elif choice == '5':
             create_xml()
         #Aqui Diego tiene que agregar su codigo
+       elif choice == '6':
+            create_json()
+        elif choice == '7':
+            create_yaml()
+        elif choice == '8':
+            create_xml()
+            create_json()
+            create_yaml()
         elif choice == '9':
             print("Saliendo del programa.")
             break
