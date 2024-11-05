@@ -1,0 +1,24 @@
+- id: 64
+  register_date: 05/11/2024 14:22:12
+  specially: Redes
+  update_date: 05/11/2024 14:22:12
+  worker_id: 78945
+  worker_name: Leandro
+- id: 65
+  register_date: 05/11/2024 17:04:38
+  specially: Desarrollo
+  update_date: 05/11/2024 17:47:05
+  worker_id: 23189
+  worker_name: Jose Huerta
+- id: 67
+  register_date: 05/11/2024 17:46:02
+  specially: Mecánica
+  update_date: 05/11/2024 17:46:02
+  worker_id: 65489
+  worker_name: Hikari
+- id: 68
+  register_date: 05/11/2024 17:46:30
+  specially: Desarrollo
+  update_date: 05/11/2024 17:46:30
+  worker_id: 66666
+  worker_name: Azucena

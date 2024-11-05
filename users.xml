@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<users>
+    <user>
+        <id>64</id>
+        <worker_id>78945</worker_id>
+        <specially>Redes</specially>
+        <worker_name>Leandro</worker_name>
+        <register_date>05/11/2024 14:22:12</register_date>
+        <update_date>05/11/2024 14:22:12</update_date>
+    </user>
+    <user>
+        <id>65</id>
+        <worker_id>23189</worker_id>
+        <specially>Desarrollo</specially>
+        <worker_name>Jose Huerta</worker_name>
+        <register_date>05/11/2024 17:04:38</register_date>
+        <update_date>05/11/2024 17:47:05</update_date>
+    </user>
+    <user>
+        <id>67</id>
+        <worker_id>65489</worker_id>
+        <specially>Mecánica</specially>
+        <worker_name>Hikari</worker_name>
+        <register_date>05/11/2024 17:46:02</register_date>
+        <update_date>05/11/2024 17:46:02</update_date>
+    </user>
+    <user>
+        <id>68</id>
+        <worker_id>66666</worker_id>
+        <specially>Desarrollo</specially>
+        <worker_name>Azucena</worker_name>
+        <register_date>05/11/2024 17:46:30</register_date>
+        <update_date>05/11/2024 17:46:30</update_date>
+    </user>
+</users>

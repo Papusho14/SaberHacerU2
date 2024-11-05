@@ -1,0 +1,34 @@
+[
+    {
+        "id": 64,
+        "worker_id": 78945,
+        "specially": "Redes",
+        "worker_name": "Leandro",
+        "register_date": "05/11/2024 14:22:12",
+        "update_date": "05/11/2024 14:22:12"
+    },
+    {
+        "id": 65,
+        "worker_id": 23189,
+        "specially": "Desarrollo",
+        "worker_name": "Jose Huerta",
+        "register_date": "05/11/2024 17:04:38",
+        "update_date": "05/11/2024 17:47:05"
+    },
+    {
+        "id": 67,
+        "worker_id": 65489,
+        "specially": "Mecánica",
+        "worker_name": "Hikari",
+        "register_date": "05/11/2024 17:46:02",
+        "update_date": "05/11/2024 17:46:02"
+    },
+    {
+        "id": 68,
+        "worker_id": 66666,
+        "specially": "Desarrollo",
+        "worker_name": "Azucena",
+        "register_date": "05/11/2024 17:46:30",
+        "update_date": "05/11/2024 17:46:30"
+    }
+]
