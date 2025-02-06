@@ -1,0 +1,19 @@
+name: Deploy Nginx Container
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v3
+
+      - name: Configurar Docker
+        run: |
+          docker build -t mi_nginx .
+          docker run -d -p 8080:80 mi_nginx

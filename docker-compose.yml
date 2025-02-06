@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  saberhaceru2:
+    image: saberhaceru2
+    build:
+      context: .
+      dockerfile: ./Dockerfile
